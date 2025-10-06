@@ -1,4 +1,4 @@
 theme = "ananke"
-baseURL = "https://<您的GitHub用户名>.github.io/<您的仓库名>/" 
+baseURL = "https://damonfan3964.github.io/my-awesome-blog/"
 languageCode = "zh-cn"
 title = "我的个人技术博客"
