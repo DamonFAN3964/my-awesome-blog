@@ -1,4 +1,5 @@
 theme = "ananke"
 baseURL = "https://damonfan3964.github.io/my-awesome-blog/"
 languageCode = "zh-cn"
+
 title = "我的个人技术博客"
