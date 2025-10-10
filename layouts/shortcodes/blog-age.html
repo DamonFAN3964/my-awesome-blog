@@ -1,0 +1,79 @@
+<div class="blog-age" style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; color: white; text-align: center; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+  <div style="margin-bottom: 1rem;">
+    <i class="fas fa-birthday-cake" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+    <h3 style="margin: 0; font-size: 1.25rem; font-weight: 600;">🎂 博客已运行</h3>
+  </div>
+  
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+    <div class="time-unit" style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 8px; min-width: 80px;">
+      <div style="font-size: 1.5rem; font-weight: bold;" id="years">0</div>
+      <div style="font-size: 0.9rem; opacity: 0.9;">年</div>
+    </div>
+    <div class="time-unit" style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 8px; min-width: 80px;">
+      <div style="font-size: 1.5rem; font-weight: bold;" id="days">0</div>
+      <div style="font-size: 0.9rem; opacity: 0.9;">天</div>
+    </div>
+    <div class="time-unit" style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 8px; min-width: 80px;">
+      <div style="font-size: 1.5rem; font-weight: bold;" id="hours">0</div>
+      <div style="font-size: 0.9rem; opacity: 0.9;">小时</div>
+    </div>
+    <div class="time-unit" style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 8px; min-width: 80px;">
+      <div style="font-size: 1.5rem; font-weight: bold;" id="minutes">0</div>
+      <div style="font-size: 0.9rem; opacity: 0.9;">分钟</div>
+    </div>
+    <div class="time-unit" style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 8px; min-width: 80px;">
+      <div style="font-size: 1.5rem; font-weight: bold;" id="seconds">0</div>
+      <div style="font-size: 0.9rem; opacity: 0.9;">秒</div>
+    </div>
+  </div>
+  
+  <div style="font-size: 0.95rem; opacity: 0.9;">
+    <i class="fas fa-heart" style="color: #ff6b6b; animation: heartbeat 1.5s ease-in-out infinite;"></i>
+    感谢陪伴我成长的每一天
+  </div>
+</div>
+
+<style>
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.time-unit:hover {
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+</style>
+
+<script>
+// 博客开始日期
+const startDate = new Date('2025-10-06T00:00:00+08:00');
+
+function updateBlogAge() {
+  const now = new Date();
+  const diff = now - startDate;
+  
+  const totalSeconds = Math.floor(diff / 1000);
+  const seconds = totalSeconds % 60;
+  const totalMinutes = Math.floor(totalSeconds / 60);
+  const minutes = totalMinutes % 60;
+  const totalHours = Math.floor(totalMinutes / 60);
+  const hours = totalHours % 24;
+  const totalDays = Math.floor(totalHours / 24);
+  const days = totalDays % 365;
+  const years = Math.floor(totalDays / 365);
+  
+  document.getElementById('years').textContent = years;
+  document.getElementById('days').textContent = days;
+  document.getElementById('hours').textContent = hours;
+  document.getElementById('minutes').textContent = minutes;
+  document.getElementById('seconds').textContent = seconds;
+}
+
+// 页面加载时立即执行一次
+updateBlogAge();
+
+// 每秒更新一次
+setInterval(updateBlogAge, 1000);
+</script>

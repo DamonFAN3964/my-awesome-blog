@@ -1,11 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on 我的个人技术博客</title>
-    <link>http://localhost:1313/%3C%E6%82%A8%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8D%3E/tags/</link>
-    <description>Recent content in Tags on 我的个人技术博客</description>
-    <generator>Hugo</generator>
-    <language>zh-cn</language>
-    <atom:link href="http://localhost:1313/%3C%E6%82%A8%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8D%3E/tags/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - Tag - Damon的技术博客</title>
+        <link>https://damonfan3964.github.io/my-awesome-blog/tags/</link>
+        <description>Tags - Tag - Damon的技术博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>fy051213@gmail.com (Damon)</managingEditor>
+            <webMaster>fy051213@gmail.com (Damon)</webMaster><lastBuildDate>Mon, 06 Oct 2025 08:00:00 &#43;0800</lastBuildDate><atom:link href="https://damonfan3964.github.io/my-awesome-blog/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Hugo</title>
+    <link>https://damonfan3964.github.io/my-awesome-blog/tags/hugo/</link>
+    <pubDate>Mon, 06 Oct 2025 08:00:00 &#43;0800</pubDate>
+    <author>fy051213@gmail.com (Damon)</author>
+    <guid>https://damonfan3964.github.io/my-awesome-blog/tags/hugo/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>LoveIt主题</title>
+    <link>https://damonfan3964.github.io/my-awesome-blog/tags/loveit%E4%B8%BB%E9%A2%98/</link>
+    <pubDate>Mon, 06 Oct 2025 08:00:00 &#43;0800</pubDate>
+    <author>fy051213@gmail.com (Damon)</author>
+    <guid>https://damonfan3964.github.io/my-awesome-blog/tags/loveit%E4%B8%BB%E9%A2%98/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>建站</title>
+    <link>https://damonfan3964.github.io/my-awesome-blog/tags/%E5%BB%BA%E7%AB%99/</link>
+    <pubDate>Mon, 06 Oct 2025 08:00:00 &#43;0800</pubDate>
+    <author>fy051213@gmail.com (Damon)</author>
+    <guid>https://damonfan3964.github.io/my-awesome-blog/tags/%E5%BB%BA%E7%AB%99/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>新手指南</title>
+    <link>https://damonfan3964.github.io/my-awesome-blog/tags/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/</link>
+    <pubDate>Mon, 06 Oct 2025 08:00:00 &#43;0800</pubDate>
+    <author>fy051213@gmail.com (Damon)</author>
+    <guid>https://damonfan3964.github.io/my-awesome-blog/tags/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>

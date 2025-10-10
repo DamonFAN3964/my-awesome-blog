@@ -1,0 +1,131 @@
+baseURL = "https://damonfan3964.github.io"
+theme = "LoveIt"
+title = "Damon的技术博客"
+languageCode = "zh-CN"
+hasCJKLanguage = true
+
+# ==============================================================================
+# 关键修复区域：所有输出配置只在这里定义一次
+# ------------------------------------------------------------------------------
+[outputs]
+  home = ["HTML", "RSS", "JSON"]    # 确保首页输出 JSON (用于 Lunr 搜索)
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS", "JSON"] # 确保标签/分类页输出 JSON (用于 Lunr 搜索)
+  term = ["HTML", "RSS"]
+# ==============================================================================
+
+[pagination]
+  pagerSize = 10
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[params]
+  defaultTheme = "auto"
+  description = "一些探索技术世界的个人学习和分享记录。"
+  
+  [params.author]
+    name = "Damon"
+    email = "fy051213@gmail.com"
+    link = "https://github.com/DamonFAN3964"
+    
+  [params.header]
+    desktopMode = "fixed"
+    mobileMode = "auto"
+    [params.header.title]
+      name = "Damon不呆萌"
+      pre = "<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i>"
+      typeit = true
+
+  [params.home.profile]
+    enable = true
+    avatarURL = "/images/avatar.png"
+    title = "Damon"
+    subtitle = "永不停止学习的技术探索者" 
+    typeit = true
+    social = true
+      
+  [params.page]
+    hiddenFromHomePage = false
+    hiddenFromSearch = false
+    twemoji = false
+    lightgallery = false
+    ruby = true
+    fraction = true
+    fontawesome = true
+    linkToMarkdown = true
+    rssFullText = false
+    
+    [params.page.toc]
+      enable = true
+      keepStatic = true
+      auto = true
+      
+    [params.page.code]
+      copy = true
+      maxShownLines = 50
+
+    [params.page.share]
+      enable = true
+      all = true
+      Twitter = true
+      Facebook = true
+      Weibo = true       
+      Qzone = true       
+      Email = true       
+
+  [params.search]
+    enable = true
+    type = "lunr"
+    cjk = true
+    contentLength = 4000
+    placeholder = "搜索文章..."
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+    absoluteURL = false
+    
+  [params.footer]
+    enable = true
+    custom = '💡 好好生活，好好学习，好好运动' 
+
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "posts"
+    name = "所有文章"
+    url = "/posts/"
+    title = "所有文章"
+  [[menu.main]]
+    weight = 2
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    title = "标签"
+  [[menu.main]]
+    weight = 3
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    title = "分类"
+  [[menu.main]]
+    weight = 4
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    title = "关于我"
+  [[menu.main]]
+    weight = 5
+    identifier = "github"
+    pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
+    name = "" 
+    url = "https://github.com/DamonFAN3964"
+    title = "GitHub"

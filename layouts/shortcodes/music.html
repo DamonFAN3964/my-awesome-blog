@@ -1,0 +1,25 @@
+{{- $url := .Get "url" | default "" -}}
+{{- $name := .Get "name" | default "Unknown" -}}
+{{- $artist := .Get "artist" | default "Unknown Artist" -}}
+{{- $cover := .Get "cover" | default "" -}}
+{{- $autoplay := .Get "autoplay" | default "false" -}}
+
+<div class="music-player" style="margin: 1rem 0; padding: 1rem; background: #f8f9fa; border-radius: 8px; border: 1px solid #e9ecef;">
+  <div style="display: flex; align-items: center; gap: 1rem;">
+    {{- if $cover -}}
+    <img src="{{ $cover }}" alt="{{ $name }}" style="width: 60px; height: 60px; border-radius: 6px; object-fit: cover;">
+    {{- end -}}
+    
+    <div style="flex: 1;">
+      <div style="font-weight: 600; color: #333;">{{ $name }}</div>
+      <div style="color: #666; font-size: 0.9rem;">{{ $artist }}</div>
+    </div>
+    
+    {{- if $url -}}
+    <audio controls {{ if eq $autoplay "true" }}autoplay{{ end }} style="max-width: 200px;">
+      <source src="{{ $url }}" type="audio/mpeg">
+      您的浏览器不支持音频播放。
+    </audio>
+    {{- end -}}
+  </div>
+</div>

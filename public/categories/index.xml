@@ -1,11 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Categories on 我的个人技术博客</title>
-    <link>http://localhost:1313/%3C%E6%82%A8%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8D%3E/categories/</link>
-    <description>Recent content in Categories on 我的个人技术博客</description>
-    <generator>Hugo</generator>
-    <language>zh-cn</language>
-    <atom:link href="http://localhost:1313/%3C%E6%82%A8%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8D%3E/categories/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Categories - Category - Damon的技术博客</title>
+        <link>https://damonfan3964.github.io/my-awesome-blog/categories/</link>
+        <description>Categories - Category - Damon的技术博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>fy051213@gmail.com (Damon)</managingEditor>
+            <webMaster>fy051213@gmail.com (Damon)</webMaster><lastBuildDate>Mon, 06 Oct 2025 08:00:00 &#43;0800</lastBuildDate><atom:link href="https://damonfan3964.github.io/my-awesome-blog/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>技术分享</title>
+    <link>https://damonfan3964.github.io/my-awesome-blog/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/</link>
+    <pubDate>Mon, 06 Oct 2025 08:00:00 &#43;0800</pubDate>
+    <author>fy051213@gmail.com (Damon)</author>
+    <guid>https://damonfan3964.github.io/my-awesome-blog/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>
