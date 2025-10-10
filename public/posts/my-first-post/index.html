@@ -1,134 +1,433 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
-  <head><script src="/&lt;您的仓库名&gt;/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=&lt;您的仓库名&gt;/livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>My First Post | 我的个人技术博客</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="">
-    <meta name="generator" content="Hugo 0.151.0">
-    
-    
-    
-      <meta name="robots" content="noindex, nofollow">
-    
-    
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>我的第一篇博客：Hugo 建站指南 - Damon的技术博客</title><meta name="Description" content="记录使用 Hugo 和 LoveIt 主题搭建个人博客的完整过程"><meta property="og:title" content="我的第一篇博客：Hugo 建站指南" />
+<meta property="og:description" content="记录使用 Hugo 和 LoveIt 主题搭建个人博客的完整过程" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://damonfan3964.github.io/my-awesome-blog/posts/my-first-post/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-10-06T08:00:00+08:00" />
+<meta property="article:modified_time" content="2025-10-07T08:00:00+08:00" />
 
-    
-<link rel="stylesheet" href="/%3c%e6%82%a8%e7%9a%84%e4%bb%93%e5%ba%93%e5%90%8d%3e/ananke/css/main.min.css" >
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="我的第一篇博客：Hugo 建站指南"/>
+<meta name="twitter:description" content="记录使用 Hugo 和 LoveIt 主题搭建个人博客的完整过程"/>
+<meta name="application-name" content="Damon的技术博客">
+<meta name="apple-mobile-web-app-title" content="Damon的技术博客">
+<meta name="referrer" content="no-referrer" /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://damonfan3964.github.io/my-awesome-blog/posts/my-first-post/" /><link rel="stylesheet" href="/my-awesome-blog/css/style.min.css"><link rel="preload" href="/my-awesome-blog/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/my-awesome-blog/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/my-awesome-blog/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/my-awesome-blog/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "我的第一篇博客：Hugo 建站指南",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/damonfan3964.github.io\/my-awesome-blog\/posts\/my-first-post\/"
+        },"genre": "posts","keywords": "Hugo, 建站, 新手指南, LoveIt主题","wordcount":  907 ,
+        "url": "https:\/\/damonfan3964.github.io\/my-awesome-blog\/posts\/my-first-post\/","datePublished": "2025-10-06T08:00:00+08:00","dateModified": "2025-10-07T08:00:00+08:00","publisher": {
+            "@type": "Organization",
+            "name": "Damon"},"author": {
+                "@type": "Person",
+                "name": "Damon"
+            },"description": "记录使用 Hugo 和 LoveIt 主题搭建个人博客的完整过程"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>
+          const query = window.matchMedia('(prefers-color-scheme: dark)');
+          function applyTheme() {
+            let theme = window.localStorage?.getItem('theme') || 'auto';
+            let isDark = theme === 'dark' || (theme === 'auto' && query.matches);
+            document.body.setAttribute('theme', isDark? 'dark' : 'light');
+            document.body.setAttribute('cfg-theme', theme);
+          }
 
+          applyTheme();
+          query.addEventListener('change', applyTheme);
+        </script>
 
-
-
-    
-
-
-    
-      
-
-    
-
-    
-
-    
-      <link rel="canonical" href="http://localhost:1313/%3C%E6%82%A8%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8D%3E/posts/my-first-post/">
-    
-
-    <meta property="og:url" content="http://localhost:1313/%3C%E6%82%A8%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8D%3E/posts/my-first-post/">
-  <meta property="og:site_name" content="我的个人技术博客">
-  <meta property="og:title" content="My First Post">
-  <meta property="og:locale" content="zh_cn">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-10-06T18:06:41+08:00">
-    <meta property="article:modified_time" content="2025-10-06T18:06:41+08:00">
-
-  <meta itemprop="name" content="My First Post">
-  <meta itemprop="datePublished" content="2025-10-06T18:06:41+08:00">
-  <meta itemprop="dateModified" content="2025-10-06T18:06:41+08:00">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="My First Post">
-
-	
-  </head><body class="ma0 avenir bg-near-white development">
-
-    
-   
-  
-
-  <header>
-    <div class="bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l center items-center justify-between">
-    <a href="/%3c%e6%82%a8%e7%9a%84%e4%bb%93%e5%ba%93%e5%90%8d%3e/" class="f3 fw2 hover-white white-90 dib no-underline">
-      
-        我的个人技术博客
-      
-    </a>
-    <div class="flex-l items-center">
-      
-
-      
-      <div class="ananke-socials"></div>
-
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/my-awesome-blog/" title="Damon的技术博客"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/my-awesome-blog/my-awesome-blog/posts/" title="所有文章"> 所有文章 </a><a class="menu-item" href="/my-awesome-blog/my-awesome-blog/tags/" title="标签"> 标签 </a><a class="menu-item" href="/my-awesome-blog/my-awesome-blog/categories/" title="分类"> 分类 </a><a class="menu-item" href="/my-awesome-blog/my-awesome-blog/about/" title="关于我"> 关于 </a><a class="menu-item" href="https://github.com/DamonFAN3964" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
     </div>
-  </div>
-</nav>
-
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/my-awesome-blog/" title="Damon的技术博客"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/my-awesome-blog/my-awesome-blog/posts/" title="所有文章">所有文章</a><a class="menu-item" href="/my-awesome-blog/my-awesome-blog/tags/" title="标签">标签</a><a class="menu-item" href="/my-awesome-blog/my-awesome-blog/categories/" title="分类">分类</a><a class="menu-item" href="/my-awesome-blog/my-awesome-blog/about/" title="关于我">关于</a><a class="menu-item" href="https://github.com/DamonFAN3964" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
     </div>
-  </header>
-
-
-
-    <main class="pb7" role="main">
-      
-  
-  
-  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
-    <header class="mt4 w-100">
-      <aside class="instapaper_ignoref b helvetica tracked ttu">
-          
-        Posts
-      </aside><div id="sharing" class="mt3 ananke-socials"></div>
-<h1 class="f1 athelas mt3 mb1">My First Post</h1>
-      
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="2025-10-06T18:06:41+08:00">October 6, 2025</time>
-      
-
-      
-      
-    </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><ul class="pa0">
-  
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">我的第一篇博客：Hugo 建站指南</h1><h2 class="single-subtitle">从零开始搭建个人技术博客的完整记录</h2><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://github.com/DamonFAN3964" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Damon</a></span>&nbsp;<span class="post-category">included in <a href="/my-awesome-blog/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>技术分享</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-10-06">2025-10-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;907 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#-博客终于上线啦">🎉 博客终于上线啦！</a></li>
+    <li><a href="#-技术栈选择">📋 技术栈选择</a></li>
+    <li><a href="#-搭建过程">🚀 搭建过程</a>
+      <ul>
+        <li><a href="#1-环境准备">1. 环境准备</a></li>
+        <li><a href="#2-创建项目">2. 创建项目</a></li>
+        <li><a href="#3-安装-loveit-主题">3. 安装 LoveIt 主题</a></li>
+        <li><a href="#4-配置文件设置">4. 配置文件设置</a></li>
+      </ul>
+    </li>
+    <li><a href="#-主要功能">🎨 主要功能</a>
+      <ul>
+        <li><a href="#音乐播放器">音乐播放器</a></li>
+        <li><a href="#博客计时器">博客计时器</a></li>
+        <li><a href="#评论系统">评论系统</a></li>
+      </ul>
+    </li>
+    <li><a href="#-遇到的问题及解决方案">💡 遇到的问题及解决方案</a>
+      <ul>
+        <li><a href="#问题1-404-页面错误">问题1: 404 页面错误</a></li>
+        <li><a href="#问题2-静态资源无法加载">问题2: 静态资源无法加载</a></li>
+        <li><a href="#问题3-计时器功能失效">问题3: 计时器功能失效</a></li>
+      </ul>
+    </li>
+    <li><a href="#-部署到-github-pages">🔧 部署到 GitHub Pages</a>
+      <ul>
+        <li><a href="#1-github-actions-配置">1. GitHub Actions 配置</a></li>
+        <li><a href="#2-推送到-github">2. 推送到 GitHub</a></li>
+      </ul>
+    </li>
+    <li><a href="#-下一步计划">📚 下一步计划</a></li>
+    <li><a href="#-总结">🎯 总结</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="-博客终于上线啦">🎉 博客终于上线啦！</h2>
+<p>经过了无数次尝试和修改，我的博客终于成功运行啦！这篇文章将记录我使用 Hugo 搭建博客的整个过程和遇到的所有困难。</p>
+<h2 id="-技术栈选择">📋 技术栈选择</h2>
+<p>在开始之前，我选择了以下技术栈：</p>
+<ul>
+<li><strong>静态网站生成器</strong>: Hugo v0.92.0</li>
+<li><strong>主题</strong>: LoveIt (功能丰富，界面美观)</li>
+<li><strong>部署平台</strong>: GitHub Pages</li>
+<li><strong>自动化部署</strong>: GitHub Actions</li>
+<li><strong>评论系统</strong>: Valine</li>
 </ul>
-<div class="mt6 instapaper_ignoref">
-      
-      
-      </div>
+<h2 id="-搭建过程">🚀 搭建过程</h2>
+<h3 id="1-环境准备">1. 环境准备</h3>
+<p>首先需要安装 Hugo：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># macOS</span>
+brew install hugo
+
+<span class="c1"># Windows (使用 Chocolatey)</span>
+choco install hugo-extended
+
+<span class="c1"># 验证安装</span>
+hugo version
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="2-创建项目">2. 创建项目</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 创建新的 Hugo 站点</span>
+hugo new site my-awesome-blog
+
+<span class="c1"># 进入项目目录</span>
+<span class="nb">cd</span> my-awesome-blog
+
+<span class="c1"># 初始化 Git 仓库</span>
+git init
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="3-安装-loveit-主题">3. 安装 LoveIt 主题</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 添加主题作为子模块</span>
+git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
+
+<span class="c1"># 更新子模块</span>
+git submodule update --init --recursive
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="4-配置文件设置">4. 配置文件设置</h3>
+<p>这是最关键的一步！我的 <code>config.toml</code> 配置包含了：</p>
+<ul>
+<li>基础站点信息</li>
+<li>主题参数配置</li>
+<li>多语言支持 (中文)</li>
+<li>菜单配置</li>
+<li>社交媒体链接</li>
+</ul>
+<h2 id="-主要功能">🎨 主要功能</h2>
+<h3 id="音乐播放器">音乐播放器</h3>
+<p>在首页集成了音乐播放器，播放坂本龙一的《Opus》：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><div class="music-player" style="margin: 1rem 0; padding: 1rem; background: #f8f9fa; border-radius: 8px; border: 1px solid #e9ecef;">
+  <div style="display: flex; align-items: center; gap: 1rem;"><img src="/my-awesome-blog/images/opus1.png" alt="Opus" style="width: 60px; height: 60px; border-radius: 6px; object-fit: cover;"><div style="flex: 1;">
+      <div style="font-weight: 600; color: #333;">Opus</div>
+      <div style="color: #666; font-size: 0.9rem;">坂本龙一</div>
+    </div><audio controls  style="max-width: 200px;">
+      <source src="/my-awesome-blog/music/opus.mp3" type="audio/mpeg">
+      您的浏览器不支持音频播放。
+    </audio></div>
+</div>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="博客计时器">博客计时器</h3>
+<p>在关于页面添加了博客运行时间计时器，实时显示博客运行的天数、小时、分钟和秒数。</p>
+<h3 id="评论系统">评论系统</h3>
+<p>集成了 Valine 评论系统，支持访客留言互动。</p>
+<h2 id="-遇到的问题及解决方案">💡 遇到的问题及解决方案</h2>
+<h3 id="问题1-404-页面错误">问题1: 404 页面错误</h3>
+<p><strong>症状</strong>: 标签、分类、关于等页面显示 404</p>
+<p><strong>原因</strong>: 缺少对应的页面文件</p>
+<p><strong>解决方案</strong>: 创建以下文件</p>
+<ul>
+<li><code>content/posts/_index.zh-cn.md</code></li>
+<li><code>content/tags/_index.zh-cn.md</code></li>
+<li><code>content/categories/_index.zh-cn.md</code></li>
+<li><code>content/about/_index.zh-cn.md</code></li>
+</ul>
+<h3 id="问题2-静态资源无法加载">问题2: 静态资源无法加载</h3>
+<p><strong>症状</strong>: 图片、音乐文件 404</p>
+<p><strong>原因</strong>: 路径配置错误</p>
+<p><strong>解决方案</strong>: 使用正确的 GitHub Pages 路径</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">avatarURL</span> <span class="p">=</span> <span class="s2">&#34;/my-awesome-blog/images/avatar.png&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="问题3-计时器功能失效">问题3: 计时器功能失效</h3>
+<p><strong>症状</strong>: 博客年龄计时器不显示</p>
+<p><strong>原因</strong>: shortcode 文件位置错误</p>
+<p><strong>解决方案</strong>: 创建 <code>layouts/shortcodes/blog-age.html</code></p>
+<h2 id="-部署到-github-pages">🔧 部署到 GitHub Pages</h2>
+<h3 id="1-github-actions-配置">1. GitHub Actions 配置</h3>
+<p>创建 <code>.github/workflows/gh-pages.yml</code>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">GitHub Pages</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="l">main</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
+</span><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v3</span><span class="w">
+</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="nt">submodules</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">          </span><span class="nt">fetch-depth</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Setup Hugo</span><span class="w">
+</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-hugo@v2</span><span class="w">
+</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="nt">hugo-version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;0.92.0&#39;</span><span class="w">
+</span><span class="w">          </span><span class="nt">extended</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build</span><span class="w">
+</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">hugo --minify</span><span class="w">
+</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy</span><span class="w">
+</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-gh-pages@v3</span><span class="w">
+</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="nt">github_token</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.GITHUB_TOKEN }}</span><span class="w">
+</span><span class="w">          </span><span class="nt">publish_dir</span><span class="p">:</span><span class="w"> </span><span class="l">./public</span><span class="w">
+</span></code></pre></td></tr></table>
+</div>
+</div><h3 id="2-推送到-github">2. 推送到 GitHub</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git add .
+git commit -m <span class="s2">&#34;Initial commit&#34;</span>
+git branch -M main
+git remote add origin https://github.com/你的用户名/my-awesome-blog.git
+git push -u origin main
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="-下一步计划">📚 下一步计划</h2>
+<ul>
+<li><i class="far fa-square fa-fw" aria-hidden="true"></i> 添加更多技术文章</li>
+<li><i class="far fa-square fa-fw" aria-hidden="true"></i> 集成搜索功能</li>
+<li><i class="far fa-square fa-fw" aria-hidden="true"></i> 优化 SEO</li>
+<li><i class="far fa-square fa-fw" aria-hidden="true"></i> 添加友链页面</li>
+<li><i class="far fa-square fa-fw" aria-hidden="true"></i> 集成访问统计</li>
+</ul>
+<h2 id="-总结">🎯 总结</h2>
+<p>搭建这个博客的过程虽然遇到了很多困难，但最终成功上线还是很有成就感的。Hugo + LoveIt 的组合确实很强大，可以快速搭建出功能丰富的个人博客。</p>
+<p>希望这篇文章能帮助到其他想要搭建个人博客的朋友！</p>
+<hr>
+<p><em>如果你在搭建过程中遇到问题，欢迎在评论区交流讨论！</em></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2025-10-07</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
     </div>
 
-    <aside class="w-30-l mt6-l">
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/my-awesome-blog/tags/hugo/">Hugo</a>,&nbsp;<a href="/my-awesome-blog/tags/%E5%BB%BA%E7%AB%99/">建站</a>,&nbsp;<a href="/my-awesome-blog/tags/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/">新手指南</a>,&nbsp;<a href="/my-awesome-blog/tags/loveit%E4%B8%BB%E9%A2%98/">LoveIt主题</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/my-awesome-blog/">Home</a></span>
+        </section>
+    </div>
 
-
-
-
-</aside>
-
-  </article>
-
-    </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:1313/%3C%E6%82%A8%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8D%3E/" >
-    &copy;  我的个人技术博客 2025 
-  </a>
-    <div><div class="ananke-socials"></div>
+    <div class="post-nav"></div>
 </div>
-  </div>
-</footer>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.3.1-DEV"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/DamonFAN3964" target="_blank">Damon</a></span></div>
+        </div>
+    </footer></div>
 
-  </body>
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script src="/my-awesome-blog/lib/autocomplete/autocomplete.min.js"></script><script src="/my-awesome-blog/lib/lunr/lunr.min.js"></script><script src="/my-awesome-blog/lib/lazysizes/lazysizes.min.js"></script><script src="/my-awesome-blog/lib/clipboard/clipboard.min.js"></script><script src="/my-awesome-blog/lib/typeit/index.umd.js"></script><script>window.config={"comment":{},"data":{"id-1":"Damon不呆萌","id-2":"Damon不呆萌"},"search":{"highlightTag":"em","lunrIndexURL":"/my-awesome-blog/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script src="/my-awesome-blog/js/theme.min.js"></script></body>
 </html>

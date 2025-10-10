@@ -1,4 +1,0 @@
-theme = "ananke"
-baseURL = "https://<您的GitHub用户名>.github.io/<您的仓库名>/" 
-languageCode = "zh-cn"
-title = "我的个人技术博客"

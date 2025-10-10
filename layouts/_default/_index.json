@@ -1,0 +1,12 @@
+[
+{{ range $index, $page := (where .Site.Pages "Type" "post") }}
+    {{ if and $index (ne $page.Kind "taxonomy") }},{{ end }}
+    {
+        "uri": "{{ $page.Permalink }}",
+        "title": "{{ $page.Title | jsonify }}",
+        "content": "{{ $page.Plain | jsonify }}",
+        "tags": [{{ range $tIndex, $tag := $page.Params.tags }}{{ if $tIndex }},{{ end }}{{ $tag | jsonify }}{{ end }}],
+        "categories": [{{ range $cIndex, $category := $page.Params.categories }}{{ if $cIndex }},{{ end }}{{ $category | jsonify }}{{ end }}]
+    }
+{{ end }}
+]
